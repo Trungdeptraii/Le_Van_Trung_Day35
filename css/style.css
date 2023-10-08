@@ -95,8 +95,9 @@
     margin: 15px 0;
 }
 .tag-item{
-    display: flex;
-    padding: 5px 15px;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
     width: 120px;
     height: 30px;
     border-radius: 15px;
