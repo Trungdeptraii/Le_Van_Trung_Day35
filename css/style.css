@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.loading{
+    display: none;
+}
+.loading.active{
+    display: flex;
+    position: fixed;
+    inset: 0;
+    background-color: rgb(214, 207, 221, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.loading-animate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    gap: 10px;
+}
+.animate{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.loading-animate .animate span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: relative;
+    animation: animate 0.5s linear infinite;
+}
+.animate span:nth-child(1){
+    animation-delay: 0.1s;
+}
+.animate span:nth-child(2){
+    animation-delay: 0.2s;
+}
+.animate span:nth-child(3){
+    animation-delay: 0.3s;
+}
+.animate span:nth-child(4){
+    animation-delay: 0.4s;
+}
+@keyframes animate{
+    from{
+        top: -10px;
+        background-color: rgb(6, 238, 103);
+    }
+    to{
+        top: 0px
+    }
+}
+
+/* post item */
+.posts{
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    min-height: 1000px;
+    /* background-color: blueviolet; */
+}
+.post-item{
+    border: 1px solid gray;
+    display: block;
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 30px;
+}
+.name{
+    font-size: 18px;
+    font-weight: 600;
+}
+.avatar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.imgAvt{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.tags{
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+.tag-item{
+    display: flex;
+    padding: 5px 15px;
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid greenyellow;
+    font-weight: 600;
+    font-size: 14px;
+    align-items: center;
+    justify-self: center;
+    
+}
+.title{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+}
+.image .des-img{
+    text-align: center;
+    margin: 10px 0;
+}
